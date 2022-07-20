@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>Erin Choi | Industrial Designer</title>
+
+        <!-- https://stackoverflow.com/questions/24922833/fontawesome-icons-are-not-showing-why -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<link href="css/normalize.css" rel="stylesheet">
+        <link href="css/fonts.css" rel="stylesheet">
+		<link href="css/main.css" rel="stylesheet">
+		<link href="css/grids.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <header>
+            <nav id="myNavbar" class="topnav">
+                <!-- navbar with logo: https://stackoverflow.com/questions/30624709/css-html-navigation-and-logo-on-same-line -->
+                <!-- hamburger Btn: https://alvarotrigo.com/blog/hamburger-menu-css/ -->
+                <div class="nav-container">
+                    <input class="checkbox" type="checkbox" name="topnav-checkbox" id="navbar-checkbox">
+
+                    <div class="hamburger-lines">
+                        <span class="line line1"></span>
+                        <span class="line line2"></span>
+                        <span class="line line3"></span>
+                    </div>
+
+                    <div class="logo">
+                        <a id="topnav-logo" class="logoBtn" href="index.html" aria-label="Logo">
+                            <img src="img/logo2.png" class="logoImg" aria-hidden="true" width="50" height="50">
+                            <span aria-hidden="true" class="visually-hidden">ERIN CHOI</span>
+                        </a>
+                    </div>
+                    
+                    <div class="topnav-items">
+                        <a href="about.html">ABOUT</a>
+                        <a href="project.html">PROJECT</a>
+                        <a href="contact.html">CONTACT</a>
+                        <div class="social-media">
+                            <a class="fa fa-instagram" href="https://www.instagram.com/o_duswo/" aria-label="Instagram"></a>
+                            <a class="fa fa-linkedin" href="linkedin.com/in/erin-yeonjae-choi-5609b31a1" aria-label="LinkedIn"></a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <section id="contact-container">
+            <div class="contact-content">
+                <div class="contact-form">
+                    <div class="basis-50">
+                        <h1 class="aboutme-title">Contact</h1>
+                    </div>
+
+                    <div class="basis-50">
+                        <div class="wrapper">
+                            <form>
+                                <div class="contact-form-width">
+                                    <div class="wrap">
+                                        <label for="name">Name</label>
+                                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                                    </div>
+                        
+                                    <div class="wrap">
+                                        <label for="email">Email</label>
+                                        <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                                    </div>
+                        
+                                    <div class="wrap">
+                                        <label for="comment">Message</label>
+                                        <textarea id="comment" name="comment" placeholder="Please write a message" required></textarea>
+                                    </div>
+                                </div>
+                                
+                                <div class="send-emailBtn-container">
+                                    <!-- submit Btn: https://www.w3schools.com/howto/howto_css_signup_form.asp -->
+                                    <button type="submit" class="contactSubmit">SUBMIT</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="footer-contact">
+                <div class="footer-container">
+                    <a class="fa fa-instagram" href="https://www.instagram.com/o_duswo/" aria-label="Instagram"></a>
+                    <a class="fa fa-linkedin" href="linkedin.com/in/erin-yeonjae-choi-5609b31a1" aria-label="LinkedIn"></a>
+                </div>
+    
+                <p class="copyright">© Erin Choi 2022</p>
+                
+            </div>
+        </section>
+
+        
+
+    </body>
+</html>

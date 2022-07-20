@@ -1,0 +1,105 @@
+@media (min-width: 31.25rem) {
+    .home-title {
+        font-size: 3.5rem;
+    }
+}
+
+@media (min-width: 50rem) {
+    .topnav {
+        height: 5rem;
+        background: transparent;
+    }
+
+    .nav-container {
+        height: 5rem;
+    }
+
+    .nav-container .checkbox,
+    .nav-container .hamburger-lines {
+        display: none;
+    }
+
+    .logo {
+        top: 1rem;
+        left: 4vw;
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .topnav-items {
+        height: unset;
+        transform: translate(0%);
+        flex-direction: row;
+        justify-content: end;
+        padding: 2.5vh 4vw;
+    }
+
+    .fa-linkedin {
+        margin-left: 1rem !important;
+    }
+
+    .social-media a {
+        padding-bottom: 0.1rem !important;
+    }
+
+    .topnav-items a {
+        padding: 0.3rem 0.5rem;
+        margin-left: 2rem;
+
+        transition-duration: 0.3s;
+    }
+
+    .empty-container {
+        display: block;
+    }
+
+    .home-banner-basis {
+        flex-basis: 50%;
+    }
+
+    .myphoto {
+        width: 50vw;
+    }
+
+    .position {
+        font-size: 1.5rem;
+    }
+
+    .home-title {
+        font-size: 8vw;
+    }
+
+    p.intro {
+        font-size: 1rem;
+        max-width: 25vw;
+        line-height: 1.5rem;
+    }
+
+    .intro-text {
+        top: 33.33vh;
+        left: 18vw;
+        padding: 0;
+    }
+
+    .project-text {
+        top: 185vh;
+        left: 17.5vw;
+        padding: 0;
+    }
+
+    .mystory-para {
+        margin-top: 3%;
+        column-count: 2;
+        column-gap: 5%;
+    }
+
+    .myskills,
+    .project-info,
+    .contact-form {
+        flex-direction: row;
+    }
+
+    .aboutme-title {
+        font-size: 4vw;
+    }
+}
