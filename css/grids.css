@@ -69,6 +69,30 @@
         font-size: 8vw;
     }
 
+    .striped-pattern {
+        display: block;
+        z-index: -1;
+        position: absolute;
+        top: 23vh;
+        left: 11vw;
+        width: 12rem;
+        height: auto;
+        opacity: 0.2;
+        margin: 0;
+    }
+
+    .striped-pattern-bottom {
+        display: block;
+        z-index: 1;
+        position: absolute;
+        top: 174vh;
+        left: 11vw;
+        width: 12rem;
+        height: auto;
+        opacity: 0.2;
+        margin: 0;
+    }
+
     p.intro {
         font-size: 1rem;
         max-width: 25vw;
@@ -94,6 +118,7 @@
     }
 
     .myskills,
+    .about-bottom-nav,
     .project-info,
     .contact-form {
         flex-direction: row;
@@ -101,5 +126,34 @@
 
     .aboutme-title {
         font-size: 4vw;
+    }
+
+    .imgBtn-big-title {
+        font-size: 4vw;
+    }
+
+    .btn-mobile {
+        display: none;
+    }
+
+    .btn-overlay {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: rgb(255, 244, 228);
+        opacity: 0;
+    
+        transition-duration: 0.3s;
+    }
+    
+    .btn-overlay:hover,
+    .btn-overlay:focus {
+        opacity: 0.95;
     }
 }

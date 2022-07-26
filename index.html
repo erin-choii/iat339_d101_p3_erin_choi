@@ -33,7 +33,7 @@
 
                     <div class="logo">
                         <a id="topnav-logo" class="logoBtn" href="index.html" aria-label="Logo">
-                            <img src="img/logo2.png" class="logoImg" aria-hidden="true" width="50" height="50">
+                            <img src="img/logo.webp" class="logoImg" aria-hidden="true" width="100" height="100" alt="Diamond shape logo">
                             <span aria-hidden="true" class="visually-hidden">ERIN CHOI</span>
                         </a>
                     </div>
@@ -52,19 +52,36 @@
             </nav>
         </header>
 
+        <div class="striped-pattern">
+            <img src="img/diamond-pattern.webp" alt="diamond shape with striped pattern" width="1416" height="1416">
+        </div>
+
+        <div class="striped-pattern-bottom">
+            <img src="img/diamond-pattern.webp" alt="diamond shape with striped pattern" width="1416" height="1416">
+        </div>
+
         <section id="home-container">
             <div class="intro-text">
                 <h1 class="position">Industrial Designer</h1>
                 <h2 class="home-title">Erin Choi</h2>
                 <p class="intro">Hello! My name is Erin Choi and I am a Vancouver based junior Industrial Designer. I am proficient with SOLIDWORKS and Rhino. I care about details, aesthetic form and functionality.</p>
-                <a class="btn-on-home" href="about.html">MORE ABOUT ME</a>
+                <div class="btn-and-arrow">
+                    <a class="btn-on-home" href="about.html">MORE ABOUT ME 
+                        <div class="arrow"></div>
+                    </a>
+                </div>
             </div>
 
             <div class="home-banner">
                 <div class="basis-50 empty-container"></div>
 
                 <div class="home-banner-basis overlay">
-                    <img src="img/me2.JPG" class="myphoto" width="2160" height="2880">
+                    <picture>
+                        <source srcset="img/me-800.webp" media="(max-width: 50rem)">
+                        <source srcset="img/me-1200.webp" media="(max-width: 75rem)">
+                        <source srcset="img/me-1500.webp">
+                        <img src="img/me-800.webp" class="myphoto" width="800" height="1201" alt="Erin wearing purple hoodie and smiling">
+                    </picture>
                 </div>
                 
             </div>
@@ -74,20 +91,27 @@
                     <h2 class="position">Architecture</h2>
                     <h3 class="home-title">Study Room</h3>
                     <p class="intro">I have designed a phone booth like study room that can be installed at a mezzanine located at SFU Surrey campus. Rhino was used to simulate the physical model made with cardboard.</p>
-                    <a class="btn-on-home" href="about.html">VIEW PROJECT</a>
+                    <a class="btn-on-home" href="about.html">VIEW PROJECT
+                        <div class="arrow"></div>
+                    </a>
                 </div>
                 <div class="basis-50 empty-container"></div>
 
                 <div class="home-banner-basis overlay">
-                    <img src="img/rhino2-1.png" class="photoOnRight" width="1082" height="1623">
+                    <picture>
+                        <source srcset="img/rhino-800.webp" media="(max-width: 50rem)">
+                        <source srcset="img/rhino-1200.webp" media="(max-width: 75rem)">
+                        <source srcset="img/rhino-1500.webp">
+                        <img src="img/rhino-800.webp" class="photoOnRight" width="800" height="1200" alt="Digital model made with Rhino 3D">
+                    </picture>
                 </div>
             </div>
 
             <div id="footer">
-                <div class="footer-container">
+                <!-- <div class="footer-container">
                     <a class="fa fa-instagram" href="https://www.instagram.com/o_duswo/" aria-label="Instagram"></a>
                     <a class="fa fa-linkedin" href="linkedin.com/in/erin-yeonjae-choi-5609b31a1" aria-label="LinkedIn"></a>
-                </div>
+                </div> -->
 
                 <p class="copyright">© Erin Choi 2022</p>
                 

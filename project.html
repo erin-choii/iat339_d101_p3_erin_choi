@@ -58,7 +58,13 @@
             </div>
 
             <div class="about-banner overlay">
-                <img src="img/rhino2.png" class="aboutBGImg" width="2836" height="1680">
+                <picture>
+                    <source srcset="img/projectBG-800.webp" media="(max-width: 50rem)">
+                    <source srcset="img/projectBG-1200.webp" media="(max-width: 75rem)">
+                    <source srcset="img/projectBG-1500.webp" media="(max-width: 93.75rem)">
+                    <source srcset="img/projectBG-1920.webp">
+                    <img src="img/projectBG-800.webp" class="aboutBGImg" width="800" height="474" alt="Digital model made with Rhino 3D">
+                </picture>
             </div>
 
             <div class="aboutme-content myStory-text project-content">
@@ -117,10 +123,10 @@
             </div>
 
             <div id="footer">
-                <div class="footer-container">
+                <!-- <div class="footer-container">
                     <a class="fa fa-instagram" href="https://www.instagram.com/o_duswo/" aria-label="Instagram"></a>
                     <a class="fa fa-linkedin" href="linkedin.com/in/erin-yeonjae-choi-5609b31a1" aria-label="LinkedIn"></a>
-                </div>
+                </div> -->
 
                 <p class="copyright">© Erin Choi 2022</p>
                 

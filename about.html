@@ -59,16 +59,22 @@
             </div>
 
             <div class="about-banner overlay">
-                <img src="img/me3-3.JPG" class="aboutBGImg" width="2160" height="2880">
+                <picture>
+                    <source srcset="img/aboutme-800.webp" media="(max-width: 50rem)">
+                    <source srcset="img/aboutme-1200.webp" media="(max-width: 75rem)">
+                    <source srcset="img/aboutme-1500.webp" media="(max-width: 93.75rem)">
+                    <source srcset="img/aboutme-1920.webp">
+                    <img src="img/aboutme-800.webp" class="aboutBGImg" width="800" height="966" alt="Erin smiling next to a plant">
+                </picture>
             </div>
 
-            <div class="aboutme-content">
-                <div class="myStory-text">
+            <div class="myStory-text aboutme-content">
+                <div class="about-container">
                     <h2 class="aboutme-title">My Story</h2>
                     <p class="mystory-para">My name is Erin Yeonjae Choi. I am an industrial designer who listens to what users need and want. I think it is most important to not assume what clients will like or feel when designing but work based on the actual research data. It is something that has to be heard before prototyping. I am proficient in SOLIDWORKS and Rhino. As an industrial designer, I pay extra attention to details and believe that those small details make huge differences and contribute to the final look.</p>
                 </div>
 
-                <div class="myStory-text myskills">
+                <div class="myskills">
                     <div class="basis-50">
                         <h2 class="aboutme-title">My Skills</h2>
                     </div>
@@ -94,21 +100,46 @@
 
                         <div class="skill-list">
                             <!-- https://99designs.co.uk/profiles/savastoic/designs/1564854 -->
-                            <img src="img/handcraft.png" width="1302" height="1338">
+                            <img src="img/handcraft.webp" width="50" height="52">
                             <div class="skill-title">HANDCRAFT</div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div id="footer">
-                <div class="footer-container">
-                    <a class="fa fa-instagram" href="https://www.instagram.com/o_duswo/" aria-label="Instagram"></a>
-                    <a class="fa fa-linkedin" href="linkedin.com/in/erin-yeonjae-choi-5609b31a1" aria-label="LinkedIn"></a>
-                </div>
+            <div class="about-bottom-nav about-container">
+                <div class="basis-50 project-BGimg">
+                    <div class="bgImg-overlay">
+                        <div class="imgBtn-title">
+                            <h2 class="imgBtn-small-title">Structure</h2>
+                            <h3 class="imgBtn-big-title">Study Room</h3>
+                            <a class="btn-mobile" href="about.html">VIEW PROJECT</a>
+                        </div>
+                    </div>
 
-                <p class="copyright">© Erin Choi 2022</p>
+                    <div class="btn-overlay">
+                        <a class="btn-on-home" href="about.html">VIEW PROJECT</a>
+                    </div>
+                </div>
                 
+
+                <div class="basis-50 contact-BGimg">
+                    <div class="bgImg-overlay">
+                        <div class="imgBtn-title">
+                            <h2 class="imgBtn-small-title">Architecture</h2>
+                            <h3 class="imgBtn-big-title">Contact</h3>
+                            <a class="btn-mobile" href="about.html">VIEW PROJECT</a>
+                        </div>
+                    </div>
+
+                    <div class="btn-overlay">
+                        <a class="btn-on-home" href="about.html">SEND EMAIL</a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="footer">
+                <p class="copyright">© Erin Choi 2022</p>
             </div>
 
         </section>
