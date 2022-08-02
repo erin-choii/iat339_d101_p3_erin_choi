@@ -12,6 +12,7 @@ img {
 
 p {
     line-height: 1.4rem;
+    font-size: 0.95rem;
 }
 
 .fa:hover,
@@ -21,8 +22,8 @@ p {
 
 .container {
     margin-top: 100vh;
-    padding: 50vh 0;
-    padding-bottom: 20vh;
+    padding-top: 0;
+    padding-bottom: 12vh;
     background-color: rgb(255, 244, 228);
 }
 
@@ -48,7 +49,7 @@ p {
 }
 
 p.intro {
-    font-size: 0.85rem;
+    font-size: 0.9rem;
     line-height: 1.3rem;
     margin: 1rem 0;
     max-width: unset;
@@ -89,21 +90,21 @@ p.intro {
 
 .intro-text {
     position: absolute;
-    top: 50vh;
+    top: 49vh;
     padding: 0 15vw;
     z-index: 0;
 }
 
 .project-text {
     position: absolute;
-    top: 185vh;
+    top: 135vh;
     padding: 0 15vw;
     z-index: 1;
 }
 
 .btn-on-home {
     display: flex;
-    font-size: 1.1rem;    
+    font-size: 1.05rem;    
     color: black;
     text-decoration: none;
 
@@ -154,12 +155,12 @@ p.intro {
 .aboutme-content {
     margin-top: 100vh;
     height: fit-content;
-    padding-bottom: 13rem !important;
+    padding-bottom: 5rem !important;
     background: rgb(255, 244, 228);
 }
 
 .myStory-text {
-    padding: 10%;
+    padding: 10% 6%;
 }
 
 .mystory-para {
@@ -251,7 +252,7 @@ p.intro {
 }
 
 .imgBtn-small-title {
-    font-size: 1rem;
+    font-size: 0.9rem;
     padding-top: 0.8rem;
     margin: 0;
 }
@@ -259,6 +260,7 @@ p.intro {
 .imgBtn-big-title {
     font-size: 1.6rem;
     margin: 0;
+    padding-top: 0.2rem;
 }
 
 .about-bottom-nav-height {
@@ -281,13 +283,14 @@ p.intro {
 .arrow:before {
     content: "";
     width: 3rem;
-    height: 1.5px;
+    height: 0.094rem;
     background: black;
     display: block;
     transition: all 0.3s ease;
 }
   
-.arrow:hover:before {
+.btn-on-home:hover .arrow:before,
+.btn-on-home:focus .arrow:before {
     width: 4rem;
     background: #693f00;
 }
@@ -297,13 +300,14 @@ p.intro {
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 5px 0 5px 5px;
+    border-width: 0.313rem 0 0.313rem 0.313rem;
     border-color: transparent transparent transparent #000000;
     display: block;
     transition: all 0.3s ease;
 }
 
-.arrow:hover:after {
+.btn-on-home:hover .arrow:after,
+.btn-on-home:focus .arrow:after {
     border-color: transparent transparent transparent #693f00;
 }
 
@@ -341,11 +345,17 @@ p.intro {
 .project-element {
     padding: 0.5rem 0;
     margin-right: 2.5rem;
+    font-size: 0.95rem;
 }
 
 .project-skills {
     width: 50%;
     padding: 8% 0;
+}
+
+.process-analysis p {
+    max-width: 100%;
+    padding-bottom: 2rem;
 }
 
 
@@ -385,14 +395,14 @@ p.intro {
     padding: 0.5rem 0;
     background: transparent;
     border: none;
-    border-bottom: solid 1.5px #d2cabe;
+    border-bottom: solid 0.094rem #d2cabe;
     outline: none;
 }
 
 .wrap input:hover,
 .wrap input:focus {
     border: none;
-    border-bottom: solid 1.5px black;
+    border-bottom: solid 0.094rem black;
 }
 
 .wrap textarea {
@@ -404,13 +414,13 @@ p.intro {
     max-height: 16rem;
     background: transparent;
     border: none;
-    border-bottom: solid 1.5px #d2cabe;
+    border-bottom: solid 0.094rem #d2cabe;
     outline: none;
 }
 
 .wrap textarea:hover,
 .wrap textarea:focus {
-    border-bottom: solid 1.5px black;
+    border-bottom: solid 0.094rem black;
 }
 
 .contactSubmit {
@@ -450,7 +460,17 @@ p.intro {
     width: 2.3rem;
     height: 2.3rem;
     z-index: 2;
+    transform: rotate(0);
+
+    transition: transform .5s ease-in-out;
 }
+
+.logo:hover,
+.logo a.logoBtn:focus {
+    transform: rotate(45deg);
+}
+
+
   
 .topnav-items {
     display: flex;
@@ -531,7 +551,7 @@ p.intro {
     display: block;
     height: 0.094rem;
     width: 107%;
-    border-radius: 10px;
+    border-radius: 0.625rem;
     background: #0e2431;
 }
   

@@ -17,7 +17,7 @@
     </head>
 
     <body>
-
+        <!-- Portfolio Design is inspired by this template: https://alex-grant-template.webflow.io/ -->
         <header>
             <nav id="myNavbar" class="topnav">
                 <!-- navbar with logo: https://stackoverflow.com/questions/30624709/css-html-navigation-and-logo-on-same-line -->
@@ -33,7 +33,7 @@
 
                     <div class="logo">
                         <a id="topnav-logo" class="logoBtn" href="index.html" aria-label="Logo">
-                            <img src="img/logo2.png" class="logoImg" aria-hidden="true" width="50" height="50">
+                            <img src="img/logo.webp" class="logoImg" aria-hidden="true" width="100" height="100" alt="Diamond shape logo">
                             <span aria-hidden="true" class="visually-hidden">ERIN CHOI</span>
                         </a>
                     </div>
@@ -60,6 +60,7 @@
 
             <div class="about-banner overlay">
                 <picture>
+                    <!-- responsive image: https://www.w3schools.com/css/tryit.asp?filename=tryresponsive_image_picture -->
                     <source srcset="img/aboutme-800.webp" media="(max-width: 50rem)">
                     <source srcset="img/aboutme-1200.webp" media="(max-width: 75rem)">
                     <source srcset="img/aboutme-1500.webp" media="(max-width: 93.75rem)">
@@ -82,7 +83,7 @@
                     <div class="basis-50">
                         <div class="skill-list">
                             <!-- https://seeklogo.com/vector-logo/282934/rhinoceros-3d -->
-                            <img src="img/rhinoLogo.png" width="568" height="568">
+                            <img src="img/rhinoLogo.png" width="568" height="568" alt="Rhinoceros 3D logo">
                             <div class="skill-title">RHINO</div>
                         </div>
 
@@ -100,7 +101,7 @@
 
                         <div class="skill-list">
                             <!-- https://99designs.co.uk/profiles/savastoic/designs/1564854 -->
-                            <img src="img/handcraft.webp" width="50" height="52">
+                            <img src="img/handcraft.webp" width="50" height="52" alt="Hand logo that looks like a lightbulb">
                             <div class="skill-title">HANDCRAFT</div>
                         </div>
                     </div>
@@ -110,31 +111,27 @@
             <div class="about-bottom-nav about-container">
                 <div class="basis-50 project-BGimg">
                     <div class="bgImg-overlay">
+                        <!-- img overlay: https://www.youtube.com/watch?v=QA8yjuS9CQg -->
                         <div class="imgBtn-title">
-                            <h2 class="imgBtn-small-title">Structure</h2>
+                            <h2 class="imgBtn-small-title">School Project</h2>
                             <h3 class="imgBtn-big-title">Study Room</h3>
-                            <a class="btn-mobile" href="about.html">VIEW PROJECT</a>
+                            <a class="btn-mobile" href="project.html">VIEW PROJECT</a>
                         </div>
                     </div>
 
-                    <div class="btn-overlay">
-                        <a class="btn-on-home" href="about.html">VIEW PROJECT</a>
-                    </div>
+                    <a class="btn-overlay" href="project.html">VIEW PROJECT</a>
                 </div>
                 
 
                 <div class="basis-50 contact-BGimg">
                     <div class="bgImg-overlay">
                         <div class="imgBtn-title">
-                            <h2 class="imgBtn-small-title">Architecture</h2>
                             <h3 class="imgBtn-big-title">Contact</h3>
-                            <a class="btn-mobile" href="about.html">VIEW PROJECT</a>
+                            <a class="btn-mobile" href="contact.html">SEND EMAIL</a>
                         </div>
                     </div>
 
-                    <div class="btn-overlay">
-                        <a class="btn-on-home" href="about.html">SEND EMAIL</a>
-                    </div>
+                    <a class="btn-overlay" href="contact.html">SEND EMAIL</a>
                 </div>
             </div>
 
