@@ -13,7 +13,11 @@
 		<link href="css/normalize.css" rel="stylesheet">
         <link href="css/fonts.css" rel="stylesheet">
 		<link href="css/main.css" rel="stylesheet">
-		<link href="css/grids.css" rel="stylesheet">
+        <link href="css/home.css" rel="stylesheet">
+        <link href="css/about.css" rel="stylesheet">
+        <link href="css/project.css" rel="stylesheet">
+        <link href="css/contact.css" rel="stylesheet">
+        <link href="css/grids.css" rel="stylesheet">
     </head>
 
     <body>
@@ -23,7 +27,7 @@
                 <!-- navbar with logo: https://stackoverflow.com/questions/30624709/css-html-navigation-and-logo-on-same-line -->
                 <!-- hamburger Btn: https://alvarotrigo.com/blog/hamburger-menu-css/ -->
                 <div class="nav-container">
-                    <input class="checkbox" type="checkbox" name="topnav-checkbox" id="navbar-checkbox">
+                    <input class="checkbox" type="checkbox" name="topnav-checkbox" id="navbar-checkbox" aria-label="Hamburger button">
 
                     <div class="hamburger-lines">
                         <span class="line line1"></span>
@@ -44,7 +48,7 @@
                         <a href="contact.html">CONTACT</a>
                         <div class="social-media">
                             <a class="fa fa-instagram" href="https://www.instagram.com/o_duswo/" aria-label="Instagram"></a>
-                            <a class="fa fa-linkedin" href="linkedin.com/in/erin-yeonjae-choi-5609b31a1" aria-label="LinkedIn"></a>
+                            <a class="fa fa-linkedin" href="https://www.linkedin.com/search/results/all/?keywords=erin%20yeonjae%20choi&origin=RICH_QUERY_SUGGESTION&position=0&searchId=7cc713f9-19de-4db5-9f8d-59a699c39a68&sid=WD%2C" aria-label="LinkedIn"></a>
                         </div>
                         
                     </div>
@@ -59,6 +63,14 @@
             </div>
 
             <div class="about-banner overlay">
+                <!-- <picture> -->
+                        <!-- responsive image: https://www.w3schools.com/css/tryit.asp?filename=tryresponsive_image_picture -->
+                        <!-- <source srcset="img/me-800.webp" media="(max-width: 50rem)">
+                        <source srcset="img/me-1200.webp" media="(max-width: 75rem)">
+                        <source srcset="img/me-1500.webp">
+                        <img src="img/me-800.webp" class="myphoto" width="800" height="1201" alt="Erin wearing purple hoodie and smiling">
+                    </picture> -->
+                    
                 <picture>
                     <!-- responsive image: https://www.w3schools.com/css/tryit.asp?filename=tryresponsive_image_picture -->
                     <source srcset="img/aboutme-800.webp" media="(max-width: 50rem)">
@@ -72,7 +84,12 @@
             <div class="myStory-text aboutme-content">
                 <div class="about-container">
                     <h2 class="aboutme-title">My Story</h2>
-                    <p class="mystory-para">My name is Erin Yeonjae Choi. I am an industrial designer who listens to what users need and want. I think it is most important to not assume what clients will like or feel when designing but work based on the actual research data. It is something that has to be heard before prototyping. I am proficient in SOLIDWORKS and Rhino. As an industrial designer, I pay extra attention to details and believe that those small details make huge differences and contribute to the final look.</p>
+
+                    <div class="about-story">
+                        <p class="basis-50">My name is Erin Yeonjae Choi and I am a junior Industrial Designer. I came to Vancouver, Canada to study abroad in 2013, and I am currently an undergraduate student at <a href="https://www.sfu.ca/" class="in-text-link">SFU</a>, majoring in <a href="https://www.sfu.ca/siat.html" class="in-text-link">Interactive Arts and Technology</a>. As I started exploring design, I found Industrial Design fun and enjoyable. I got fascinated to see how a 3-Dimensional digital model can be created into an actual physical model.</p>
+
+                        <p class="basis-50 pa-para">When I design, I pay attention to details because I believe that small details make huge differences and complete a final design. I also try to achieve both aesthetic forms and functionality. I am proficient in SOLIDWORKS and Rhino. I have experience in model making using various materials, such as cardboard, glossy cardstock, styrene, and foam. I look forward to working on new projects and getting more experience in Industrial Design.</p>
+                    </div>
                 </div>
 
                 <div class="myskills">
@@ -80,22 +97,22 @@
                         <h2 class="aboutme-title">My Skills</h2>
                     </div>
 
-                    <div class="basis-50">
+                    <div class="basis-50 pa-para">
                         <div class="skill-list">
                             <!-- https://seeklogo.com/vector-logo/282934/rhinoceros-3d -->
-                            <img src="img/rhinoLogo.png" width="568" height="568" alt="Rhinoceros 3D logo">
+                            <img src="img/rhinoLogo.webp" width="55" height="55" alt="Rhinoceros 3D logo">
                             <div class="skill-title">RHINO</div>
                         </div>
 
                         <div class="skill-list">
                             <!-- https://seeklogo.com/vector-logo/291372/grasshopper-3d -->
-                            <img src="img/grasshopper.png" width="284" height="284">
+                            <img src="img/grasshopper.webp" width="55" height="55" alt="Grasshopper logo">
                             <div class="skill-title">GRASSHOPPER</div>
                         </div>
 
                         <div class="skill-list">
                             <!-- https://www.dlf.pt/ddetail/hJmJTTh_solidworks-logo-clipart-banner-library-logo-solidworks-solid/ -->
-                            <img src="img/solidworks1.png" width="557" height="585">
+                            <img src="img/solidworks1.webp" width="50" height="53" alt="SOLIDWORKS logo">
                             <div class="skill-title">SOLIDWORKS</div>
                         </div>
 
@@ -113,13 +130,11 @@
                     <div class="bgImg-overlay">
                         <!-- img overlay: https://www.youtube.com/watch?v=QA8yjuS9CQg -->
                         <div class="imgBtn-title">
-                            <h2 class="imgBtn-small-title">School Project</h2>
+                            <h2 class="imgBtn-small-title">Case Study</h2>
                             <h3 class="imgBtn-big-title">Study Room</h3>
-                            <a class="btn-mobile" href="project.html">VIEW PROJECT</a>
+                            <a class="btn-overlay btn-for-mobile" href="project.html">VIEW PROJECT</a>
                         </div>
                     </div>
-
-                    <a class="btn-overlay" href="project.html">VIEW PROJECT</a>
                 </div>
                 
 
@@ -127,11 +142,9 @@
                     <div class="bgImg-overlay">
                         <div class="imgBtn-title">
                             <h3 class="imgBtn-big-title">Contact</h3>
-                            <a class="btn-mobile" href="contact.html">SEND EMAIL</a>
+                            <a class="btn-overlay" href="contact.html">SEND EMAIL</a>
                         </div>
-                    </div>
-
-                    <a class="btn-overlay" href="contact.html">SEND EMAIL</a>
+                    </div>                    
                 </div>
             </div>
 

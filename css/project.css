@@ -1,0 +1,126 @@
+/* Webkit, o, ms prefixed by https://autoprefixer.github.io */
+
+/* ------ PROJECT ------ */
+.project-content {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding-bottom: 18rem;
+}
+
+.project-container {
+    width: 100%;
+}
+
+.project-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+
+.project-element {
+    padding: 0.5rem 0;
+    margin-right: 2.5rem;
+    font-size: 1rem;
+}
+
+.project-skills {
+    width: 50%;
+    padding: 6% 0;
+}
+
+.process-analysis p,
+.process-analysis .para-nextto-img {
+    max-width: 100%;
+    padding-bottom: 6vh;
+}
+
+.process-analysis-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+
+.process-analysis-section-centre {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 3vh;
+}
+
+.process-analysis .process-analysis-section-centre img{
+    padding-top: 0;
+}
+
+.process-analysis img {
+    padding-top: 3vh;
+}
+
+.pa-top-para {
+    padding-left: 3vw;
+}
+
+.pa-left-para {
+    padding-right: 0;
+}
+
+.summary-para {
+    padding-bottom: 0 !important;
+}
+
+.pa-h3{
+    margin: 0;
+    font-size: 1.4rem;
+    margin-top: 1rem;
+}
+
+.pa-h4 {
+    font-size: 1.2rem;
+    padding-bottom: 0 !important;
+    margin-top: 2vh;
+    margin-bottom: 0;
+}
+
+.for-figurecaption {
+    position: relative;
+}
+
+.pa-figurecaption {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 1% 3% 2% 3%;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-align: end;
+    color: black;
+    background-color: rgba(255, 244, 228, 0.8);
+}

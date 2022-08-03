@@ -1,13 +1,19 @@
+/* Webkit, o, ms prefixed by https://autoprefixer.github.io */
+
 @media (min-width: 31.25rem) {
     .home-title {
         font-size: 3.5rem;
     }
 }
 
-@media (min-width: 50rem) {
+@media (min-width: 56rem) {
     p {
         font-size: 1.2rem;
-        line-height: 1.65rem;
+        line-height: 1.7rem;
+    }
+
+    .skill-list {
+        font-size: 1.2rem;
     }
 
     .topnav {
@@ -33,9 +39,16 @@
 
     .topnav-items {
         height: unset;
-        transform: translate(0%);
-        flex-direction: row;
-        justify-content: end;
+        -webkit-transform: translate(0%);
+            -ms-transform: translate(0%);
+                transform: translate(0%);
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: end;
+            -ms-flex-pack: end;
+                justify-content: end;
         padding: 2.5vh 4vw;
     }
 
@@ -51,7 +64,11 @@
         padding: 0.3rem 0.5rem;
         margin-left: 2rem;
 
-        transition-duration: 0.3s;
+        -webkit-transition-duration: 0.3s;
+
+             -o-transition-duration: 0.3s;
+
+                transition-duration: 0.3s;
     }
 
     .empty-container {
@@ -59,7 +76,8 @@
     }
 
     .home-banner-basis {
-        flex-basis: 50%;
+        -ms-flex-preferred-size: 50%;
+            flex-basis: 50%;
     }
 
     .myphoto {
@@ -105,7 +123,7 @@
 
     p.intro {
         font-size: 1.1rem;
-        max-width: 25vw;
+        max-width: 27vw;
         line-height: 1.5rem;
     }
 
@@ -113,6 +131,8 @@
         top: 33.33vh;
         left: 18vw;
         padding: 0;
+        margin: 0;
+        background-color: transparent;
     }
 
     .project-text {
@@ -125,17 +145,22 @@
         padding: 10%;
     }
 
-    .mystory-para {
+    .about-story {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
         margin-top: 3%;
-        column-count: 2;
-        column-gap: 5%;
     }
 
     .myskills,
     .about-bottom-nav,
     .project-info,
     .contact-form {
-        flex-direction: row;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
     }
 
     .project-element {
@@ -144,6 +169,27 @@
 
     .process-analysis p {
         max-width: 50%;
+    }
+
+    .pa-para {
+        padding-left: 3vw;
+    }
+
+    .pa-h4 {
+        font-size: 1.3rem;
+        margin-top: 4vh;
+    }
+
+    .process-analysis .para-nextto-img {
+        padding-bottom: 0;
+        padding-left: 0;
+    }
+
+    .process-analysis-section {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
     }
 
     .aboutme-title {
@@ -158,15 +204,20 @@
         font-size: 4vw;
     }
 
-    .btn-mobile {
-        display: none;
-    }
-
     .btn-overlay {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         position: absolute;
         top: 0;
         right: 0;
@@ -177,20 +228,57 @@
         font-size: 1.1rem;    
         color: black;
         text-decoration: underline;
+        padding: 0;
+        margin: 0;
     
-        transition-duration: 0.3s;
+        -webkit-transition-duration: 0.3s;
+    
+             -o-transition-duration: 0.3s;
+    
+                transition-duration: 0.3s;
     }
     
     .btn-overlay:hover,
     .btn-overlay:focus {
         opacity: 0.95;
+        font-size: 1.1rem;    
+        color: black;
+        text-decoration: underline;
     }
 
     .btn-on-home {
-        font-size: 1.2rem;
+        font-size: 1.25rem;
+        padding: 0;
     }
     
     .imgBtn-small-title {
         font-size: 1.2rem;
+    }
+
+    .pa-h3{
+        margin-top: 4vh;
+        font-size: 2rem;
+    }
+
+    .pa-figurecaption {
+        padding: 1rem;
+        font-size: 1.6vw;
+    }
+
+    .physical-model-img {
+        padding-top: 9vh !important;
+    }
+}
+
+@media (min-width: 72.5rem) {
+    .process-analysis-section-centre {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+    }
+
+    .process-analysis .para-nextto-img {
+        padding-left: 3vw;
     }
 }

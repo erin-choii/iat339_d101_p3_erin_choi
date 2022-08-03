@@ -13,7 +13,11 @@
 		<link href="css/normalize.css" rel="stylesheet">
         <link href="css/fonts.css" rel="stylesheet">
 		<link href="css/main.css" rel="stylesheet">
-		<link href="css/grids.css" rel="stylesheet">
+        <link href="css/home.css" rel="stylesheet">
+        <link href="css/about.css" rel="stylesheet">
+        <link href="css/project.css" rel="stylesheet">
+        <link href="css/contact.css" rel="stylesheet">
+        <link href="css/grids.css" rel="stylesheet">
     </head>
 
     <body>
@@ -23,7 +27,7 @@
                 <!-- navbar with logo: https://stackoverflow.com/questions/30624709/css-html-navigation-and-logo-on-same-line -->
                 <!-- hamburger Btn: https://alvarotrigo.com/blog/hamburger-menu-css/ -->
                 <div class="nav-container">
-                    <input class="checkbox" type="checkbox" name="topnav-checkbox" id="navbar-checkbox">
+                    <input class="checkbox" type="checkbox" name="topnav-checkbox" id="navbar-checkbox" aria-label="Hamburger button">
 
                     <div class="hamburger-lines">
                         <span class="line line1"></span>
@@ -44,7 +48,7 @@
                         <a href="contact.html">CONTACT</a>
                         <div class="social-media">
                             <a class="fa fa-instagram" href="https://www.instagram.com/o_duswo/" aria-label="Instagram"></a>
-                            <a class="fa fa-linkedin" href="linkedin.com/in/erin-yeonjae-choi-5609b31a1" aria-label="LinkedIn"></a>
+                            <a class="fa fa-linkedin" href="https://www.linkedin.com/search/results/all/?keywords=erin%20yeonjae%20choi&origin=RICH_QUERY_SUGGESTION&position=0&searchId=7cc713f9-19de-4db5-9f8d-59a699c39a68&sid=WD%2C" aria-label="LinkedIn"></a>
                         </div>
                         
                     </div>
@@ -74,21 +78,21 @@
                         <h2 class="aboutme-title">Study Room</h2>
                     </div>
 
-                    <div class="basis-50">
+                    <div class="basis-50 pa-para">
                         <div class="project-info project-container">
                             <div class="project-element">3 WEEKS</div>
                             <div class="project-element">SPRING 2022</div>
                             <div class="project-element">SCHOOL PROJECT</div>
                         </div>
 
-                        <p>I have designed a study booth that could be installed in an indoor plaza. I used Rhinoceros 3D to create a digital model and created a prototype using cardboard. As I work on the ideation, I considered the human factors and ergonomics of the end-users, which were students who may carry their backpacks or things that may be large in volumes.</p>
+                        <p>As a case study for my Spatial Design course, I have designed a study room that can be temporarily installed in an indoor mezzanine at SFU Surrey campus. I created a prototype using cardboard and a 3D digital model using Rhinoceros 3D to simulate the physical model.</p>
                     </div>
                 </div>
 
                 <div class="project-skills">
                     <div class="skill-list">
                         <!-- https://seeklogo.com/vector-logo/282934/rhinoceros-3d -->
-                        <img src="img/rhinoLogo.png" width="568" height="568" alt="Rhinoceros 3D logo">
+                        <img src="img/rhinoLogo.webp" width="55" height="55" alt="Rhinoceros 3D logo">
                         <div class="skill-title">RHINO</div>
                     </div>
 
@@ -100,37 +104,139 @@
                 </div>
 
                 <div class="process-analysis">
-                    <p>The indoor Study Booth project was done as a school project for the Spatial Design course. Human factors, dimensions, and ergonomics were important factors to consider. In the initial ideation process, I drew the sketches that had less consideration for human factors or ergonomics. As I iterated throughout the process and prototyping, I found some issues in terms of human dimensions and user experience.</p>
+                    <h3 class="pa-h3">Project Summary</h3>
+                    <div class="process-analysis-section">
+                        <p class="basis-50 summary-para">The end users of this project were students who may carry their backpacks or things that may be large in volumes. Initially, I drew ideation sketches that had less consideration for human factors or ergonomics. As I iterated the ideation process and prototyping, I found some issues in terms of human dimensions and user experience.</p>
 
-                    <p>I got feedback from the instructor and classmates, and simulating the walkway using a figurine helped me to imagine and understand the process of using the study booth better. For example, I had non-adjustable seat and no ramp to allow more diverse spectrum of users. After the feedback, I improved to adopt the human factors and dimensions and installed the ramp and made the entrance widen.</p>
-
+                        <p class="basis-50 pa-para">After getting feedback from the instructor and classmates, I referred to the human factors and ergonomics of the 50th percentile to improve the design and the dimension of the study room. Moreover, simulating the movement of circulation using a figurine helped me understand the user experience of using the study booth better.</p>
+                    </div>
                     
-                    <img src="img/1st-sketch.png" width="1882" height="1382" alt="First ideation sketch of a study room">
-                    <p>To start the project, I started sketching the ideations following the given dimensions of the project. As you can see in Figure 1, it was too basic and the single panel was too close to the structure. Moreover, the human factors were not considered well.</p>
-
-                    <img src="img/1st-iteration.png" width="2028" height="1357" alt="First iteration sketch with chamfered edge and partition">
-                    <p>To have more interesting dynamics in design and have more movement circulation in the design, I added multiple panels that work as a partition (Figure 2). However, as in-class feedback, the ramp inside the booth was making it inconvenient to enter and it was not adjustable for different users.</p>
-
-                    <img src="img/2nd-iteration.jpg" width="1535" height="1386" alt="Second iteration sketch slidable chair">
-                    <p>Thus, as Figure 3 displays, I made the chair foldable so that it is more desirable for any kind of user such as users on wheelchairs or users who want to stand up while using the table. The chair became more adaptable to users, but as I built the first iteration of the prototype using cardboard, it was difficult to install the partition with multiple vertical panels and the entrance was not large enough to fit the users with wheelchairs. Also, in terms of unity, it looked not consistent with the booth as a major element of this project.</p>
+                    <h3 class="pa-h3">Process Analysis</h3>
+                    <div class="for-figurecaption">
+                        <picture>
+                            <!-- responsive image: https://www.w3schools.com/css/tryit.asp?filename=tryresponsive_image_picture -->
+                            <source srcset="img/1st-sketch-800.webp" media="(max-width: 50rem)">
+                            <source srcset="img/1st-sketch-1200.webp" media="(max-width: 75rem)">
+                            <source srcset="img/1st-sketch-1500.webp" media="(max-width: 93.75rem)">
+                            <source srcset="img/1st-sketch-1800.webp">
+                            <img src="img/1st-sketch-800.webp" width="800" height="588" alt="First ideation sketch of a study room">
+                        </picture>
+                        <div class="pa-figurecaption">Figure 1</div>
+                    </div>
                     
-                    <img src="img/3rd-iteration.jpg" width="1978" height="1387" alt="Third ideration sketch with foldable chair">
-                    <p>Based on the feedback that I got, as a final iteration (Figure 4), I redesigned the partition in a way that it could still keep the user’s privacy safe, but allow more lighting inside and let people outside of the box be able to know if there is a person inside or not. Also, most importantly, I added a ramp at the entrance so that users with wheelchairs have access to the inside of the booth. </p>
+                    <p>To begin the project, I started sketching ideations following the given dimensions of the project. However, as you can see in Figure 1, the design was too basic. Moreover, the human factors were not considered well and the single panel was too close to the structure.</p>
+
+                    <div class="for-figurecaption">
+                        <picture>
+                            <!-- responsive image: https://www.w3schools.com/css/tryit.asp?filename=tryresponsive_image_picture -->
+                            <source srcset="img/1st-iteration-800.webp" media="(max-width: 50rem)">
+                            <source srcset="img/1st-iteration-1200.webp" media="(max-width: 75rem)">
+                            <source srcset="img/1st-iteration-1500.webp" media="(max-width: 93.75rem)">
+                            <source srcset="img/1st-iteration-2000.webp">
+                            <img src="img/1st-iteration-800.webp" width="800" height="536" alt="First iteration sketch with chamfered edge and partition">
+                        </picture>
+                        <div class="pa-figurecaption">Figure 2</div>
+                    </div>
                     
-                    <img src="img/physical-model.png" width="1978" height="1387" alt="Front view with an angle of the physical model made with cardboard">
-                    <img src="img/physical-model2.png" width="1978" height="1387" alt="Perspective view of the physical model made with a figurine inside">
+                    <p>To have more unique design personality and allow better movement circulation, I added multiple vertical panels that work as a partition for users to have more privacy (Figure 2). However,I got feedback from a classmate, saying that the ramp inside the study room was making it inconvenient to enter and it was not adjustable for different users.</p>
+
+                    <div class="process-analysis-section-centre">
+                        <div class="basis-50 for-figurecaption">
+                            <picture>
+                                <!-- responsive image: https://www.w3schools.com/css/tryit.asp?filename=tryresponsive_image_picture -->
+                                <source srcset="img/2nd-iteration-800.webp" media="(max-width: 50rem)">
+                                <source srcset="img/2nd-iteration-1200.webp" media="(max-width: 75rem)">
+                                <source srcset="img/2nd-iteration-1500.webp" media="(max-width: 93.75rem)">
+                                <source srcset="img/2nd-iteration-1920.webp">
+                                <img src="img/2nd-iteration-800.webp" width="800" height="723" alt="Second iteration sketch slidable chair">
+                            </picture>
+                            <div class="pa-figurecaption">Figure 3</div>
+                        </div>
+                        
+                        <div class="basis-50">
+                            <p class="para-nextto-img summary-para">Thus, as Figure 3 displays, I made the chair slidable so that users can move the chair and fine their own comfortable position. Also, it works for users who want to stand up while using the table.</p>
+
+                            <h4 class="pa-h4 para-nextto-img">Issues</h4>
+                            <p class="para-nextto-img">As I built a low-fidelity prototype using cardboard, I found that it was difficult to install the partition with multiple vertical panels, and the entrance was not large enough to fit the users with wheelchairs. Also, in terms of unity, it looked not consistent with the booth as a major element of this project.</p>
+                        </div>
+                        
+                    </div>
+
+                    <div class="process-analysis-section-centre">
+                        <div class="basis-50 for-figurecaption">
+                            <picture>
+                                <!-- responsive image: https://www.w3schools.com/css/tryit.asp?filename=tryresponsive_image_picture -->
+                                <source srcset="img/3rd-iteration-800.webp" media="(max-width: 50rem)">
+                                <source srcset="img/3rd-iteration-1200.webp" media="(max-width: 75rem)">
+                                <source srcset="img/3rd-iteration-1500.webp" media="(max-width: 93.75rem)">
+                                <source srcset="img/3rd-iteration-1920.webp">
+                                <img src="img/3rd-iteration-800.webp" width="800" height="561" alt="Third ideration sketch with foldable chair">
+                            </picture>
+                            <div class="pa-figurecaption">Figure 4</div>
+                        </div>
+                        
+                        <p class="basis-50 para-nextto-img">Based on the feedback that I got, as a final iteration (Figure 4), I redesigned the partition in a way that it could still keep the user’s privacy safe, but allow more lighting inside and let people outside of the box be able to know if there is a person inside or not. Also, most importantly, I added a ramp at the entrance so that users with wheelchairs have access to the inside of the booth.</p>
+                    </div>                    
+
+                    <div class="for-figurecaption">
+                        <picture>
+                            <!-- responsive image: https://www.w3schools.com/css/tryit.asp?filename=tryresponsive_image_picture -->
+                            <source srcset="img/physical-model-800.webp" media="(max-width: 50rem)">
+                            <source srcset="img/physical-model-1200.webp" media="(max-width: 75rem)">
+                            <source srcset="img/physical-model-1500.webp" media="(max-width: 93.75rem)">
+                            <source srcset="img/physical-model-2000.webp">
+                            <img src="img/physical-model-800.webp" width="800" height="600" alt="Front view with an angle of the physical model made with cardboard" class="physical-model-img">
+                        </picture>
+                        <div class="pa-figurecaption">Figure 5</div>
+                    </div>
+
+                    <div class="for-figurecaption">
+                        <picture>
+                            <!-- responsive image: https://www.w3schools.com/css/tryit.asp?filename=tryresponsive_image_picture -->
+                            <source srcset="img/physical-model2-800.webp" media="(max-width: 50rem)">
+                            <source srcset="img/physical-model2-1200.webp" media="(max-width: 75rem)">
+                            <source srcset="img/physical-model2-1500.webp" media="(max-width: 93.75rem)">
+                            <source srcset="img/physical-model2-2000.webp">
+                            <img src="img/physical-model2-800.webp" width="800" height="600" alt="Perspective view of the physical model made with a figurine inside">
+                        </picture>
+                        <div class="pa-figurecaption">Figure 6</div>
+                    </div>
+
                     <p>Figure 5 describes the cardboard physical model that was scaled down to fit a given figurine and Figure 6 shows the figurine sitting inside the booth.</p>
+
+                    <div class="for-figurecaption">
+                        <picture class="for-figurecaption">
+                            <!-- responsive image: https://www.w3schools.com/css/tryit.asp?filename=tryresponsive_image_picture -->
+                            <source srcset="img/rhino2-800.webp" media="(max-width: 50rem)">
+                            <source srcset="img/rhino2-1200.webp" media="(max-width: 75rem)">
+                            <source srcset="img/rhino2-1500.webp" media="(max-width: 93.75rem)">
+                            <source srcset="img/rhino2-1920.webp">
+                            <img src="img/rhino2-800.webp" width="800" height="640" alt="Perspective front view of digital model in Rhino 3D">
+                        </picture>
+                        <div class="pa-figurecaption">Figure 7</div>
+                    </div>
+
+                    <div class="for-figurecaption">
+                        <picture class="for-figurecaption">
+                            <!-- responsive image: https://www.w3schools.com/css/tryit.asp?filename=tryresponsive_image_picture -->
+                            <source srcset="img/rhino3-800.webp" media="(max-width: 50rem)">
+                            <source srcset="img/rhino3-1200.webp" media="(max-width: 75rem)">
+                            <source srcset="img/rhino3-1500.webp" media="(max-width: 93.75rem)">
+                            <source srcset="img/rhino3-1920.webp">
+                            <img src="img/rhino3-800.webp" width="800" height="640" alt="Back side of digital model in Rhino 3D">
+                        </picture>
+                        <div class="pa-figurecaption">Figure 8</div>
+                    </div>
+                    
+                    <p>To simulate the physical model, I created a digital model using Rhinoceros 3D (Figure 7 & 8).</p>
+
+                    <h3 class="pa-h3">Reflection</h3>
+                    <p>Through this project, I was able to understand the importance of understanding the human factors and ergonomics to have the right dimension of a prototype. I believe it will save more time as a few iterations can be skipped. Also, the more I am aware of the human factors and ergonomics, the more suitable the structures become. One thing that I will do differently is to create a digital model and a figurine first and simulate the user experience. After I feel confident with the design and the model, I will build a physical model. This way, any modification will be much easier, and I do not waste materials for iterations.</p>
                 </div>
             </div>
 
             <div id="footer">
-                <!-- <div class="footer-container">
-                    <a class="fa fa-instagram" href="https://www.instagram.com/o_duswo/" aria-label="Instagram"></a>
-                    <a class="fa fa-linkedin" href="linkedin.com/in/erin-yeonjae-choi-5609b31a1" aria-label="LinkedIn"></a>
-                </div> -->
-
                 <p class="copyright">© Erin Choi 2022</p>
-                
             </div>
 
         </section>

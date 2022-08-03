@@ -13,7 +13,11 @@
 		<link href="css/normalize.css" rel="stylesheet">
         <link href="css/fonts.css" rel="stylesheet">
 		<link href="css/main.css" rel="stylesheet">
-		<link href="css/grids.css" rel="stylesheet">
+        <link href="css/home.css" rel="stylesheet">
+        <link href="css/about.css" rel="stylesheet">
+        <link href="css/project.css" rel="stylesheet">
+        <link href="css/contact.css" rel="stylesheet">
+        <link href="css/grids.css" rel="stylesheet">
     </head>
 
     <body>
@@ -23,7 +27,7 @@
                 <!-- navbar with logo: https://stackoverflow.com/questions/30624709/css-html-navigation-and-logo-on-same-line -->
                 <!-- hamburger Btn: https://alvarotrigo.com/blog/hamburger-menu-css/ -->
                 <div class="nav-container">
-                    <input class="checkbox" type="checkbox" name="topnav-checkbox" id="navbar-checkbox">
+                    <input class="checkbox" type="checkbox" name="topnav-checkbox" id="navbar-checkbox" aria-label="Hamburger button">
 
                     <div class="hamburger-lines">
                         <span class="line line1"></span>
@@ -44,7 +48,7 @@
                         <a href="contact.html">CONTACT</a>
                         <div class="social-media">
                             <a class="fa fa-instagram" href="https://www.instagram.com/o_duswo/" aria-label="Instagram"></a>
-                            <a class="fa fa-linkedin" href="linkedin.com/in/erin-yeonjae-choi-5609b31a1" aria-label="LinkedIn"></a>
+                            <a class="fa fa-linkedin" href="https://www.linkedin.com/search/results/all/?keywords=erin%20yeonjae%20choi&origin=RICH_QUERY_SUGGESTION&position=0&searchId=7cc713f9-19de-4db5-9f8d-59a699c39a68&sid=WD%2C" aria-label="LinkedIn"></a>
                         </div>
                         
                     </div>
@@ -64,7 +68,7 @@
             <div class="intro-text">
                 <h1 class="position">Industrial Designer</h1>
                 <h2 class="home-title">Erin Choi</h2>
-                <p class="intro">Hello! My name is Erin Choi and I am a Vancouver based junior Industrial Designer. I am proficient with SOLIDWORKS and Rhino. I care about details, aesthetic form and functionality.</p>
+                <p class="intro">Hello! My name is Erin Choi. I am a junior Industrial Designer and currently undergraduate student in Vancouver, Canada. My main skills are SOLIDWORKS and Rhino.</p>
                 <div class="btn-and-arrow">
                     <a class="btn-on-home" href="about.html">MORE ABOUT ME
                         <!-- arrow with hover: https://www.sliderrevolution.com/resources/css-arrow/ -->
@@ -77,29 +81,20 @@
                 <div class="basis-50 empty-container"></div>
 
                 <div class="home-banner-basis overlay">
-                    <picture>
-                        <!-- responsive image: https://www.w3schools.com/css/tryit.asp?filename=tryresponsive_image_picture -->
-                        <source srcset="img/me-800.webp" media="(max-width: 50rem)">
-                        <source srcset="img/me-1200.webp" media="(max-width: 75rem)">
-                        <source srcset="img/me-1500.webp">
-                        <img src="img/me-800.webp" class="myphoto" width="800" height="1201" alt="Erin wearing purple hoodie and smiling">
-                    </picture>
+                    <!-- https://www.youtube.com/watch?v=NMrbfb7AFSY -->
+                    <!-- https://stackoverflow.com/questions/7850970/responsive-html5-video-resolution -->
+                    <video controls loop autoplay muted id="myVideo" class="myphoto" width="2840" height="1684" aria-describedby="myVideo">
+                        <source src="img/animation_2.mp4" type="video/mp4">
+                        <source src="img/animation_2.webm" type="video/webm">
+                        <source src="img/animation_2.ogg" type="video/ogg">
+                        A video shows a digital model created in Rhino.
+                    </video>
                 </div>
                 
             </div>
 
             <div class="container home-banner">
-                <div class="project-text">
-                    <h2 class="position">Architecture</h2>
-                    <h3 class="home-title">Study Room</h3>
-                    <p class="intro">I have designed a phone booth like study room that can be installed at a mezzanine located at SFU Surrey campus. Rhino was used to simulate the physical model made with cardboard.</p>
-                    <div class="btn-and-arrow">
-                        <a class="btn-on-home" href="project.html">VIEW PROJECT
-                            <!-- arrow with hover: https://www.sliderrevolution.com/resources/css-arrow/ -->
-                            <div class="arrow"></div>
-                        </a>
-                    </div>
-                </div>
+                
                 
                 <div class="basis-50 empty-container"></div>
 
@@ -111,16 +106,22 @@
                         <img src="img/rhino-800.webp" class="photoOnRight" width="800" height="1200" alt="Digital model made with Rhino 3D">
                     </picture>
                 </div>
+
+                <div class="project-text">
+                    <h2 class="position">Case Study</h2>
+                    <h3 class="home-title">Study Room</h3>
+                    <p class="intro">I have designed a study room that can be temporarily installed at a mezzanine located at SFU Surrey campus. Rhino was used to simulate the physical model made with cardboard.</p>
+                    <div class="btn-and-arrow">
+                        <a class="btn-on-home" href="project.html">VIEW PROJECT
+                            <!-- arrow with hover: https://www.sliderrevolution.com/resources/css-arrow/ -->
+                            <div class="arrow"></div>
+                        </a>
+                    </div>
+                </div>
             </div>
 
             <div id="footer">
-                <!-- <div class="footer-container">
-                    <a class="fa fa-instagram" href="https://www.instagram.com/o_duswo/" aria-label="Instagram"></a>
-                    <a class="fa fa-linkedin" href="linkedin.com/in/erin-yeonjae-choi-5609b31a1" aria-label="LinkedIn"></a>
-                </div> -->
-
                 <p class="copyright">© Erin Choi 2022</p>
-                
             </div>
 
         </section>
